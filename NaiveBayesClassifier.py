@@ -72,7 +72,7 @@ def getPredictions(info, test):
 	predictions = [predict(info, instance) for instance in test]
 	return predictions
 
-filename = 'Docu.csv'
+filename = 'docu.csv'
 df = pd.read_csv(filename)
 mydata = df.values.tolist()
 mydata = encode_class(mydata)
