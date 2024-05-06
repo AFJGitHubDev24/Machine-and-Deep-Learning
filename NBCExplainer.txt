@@ -1,0 +1,40 @@
+1. Importing Libraries:
+   The code starts by importing necessary libraries such as math, random, pandas (imported as pd), and numpy (imported as np).
+
+2. Function Definitions:
+    .encode_class: This function encodes the class labels in the dataset to numerical values.
+    . splitting: Splits the dataset into training and testing sets based on a given ratio.
+    . vgroupUnderClass: Groups data instances based on their class labels.
+    . MeanAndStdDev: Computes the mean and standard deviation of a list of numbers.
+    . MeanAndStdDevForClass: Computes the mean and standard deviation for each attribute within each class.
+    . calculateGaussianProbability: Calculates the Gaussian probability density function for a given value, mean, and standard deviation.
+    . calculateClassProbabilities: Calculates the probability of each class for a given test instance using the Gaussian probability density function.
+    . predict: Predicts the class label for a given test instance based on the class probabilities.
+    . accuracy_rate: Calculates the accuracy of the model by comparing predicted labels with actual labels.
+    . getPredictions: Generates predictions for a set of test instances.
+
+3. Data Loading and Preprocessing:
+   . Loads data from a CSV file named 'Docu.csv' using pandas and converts it to a list of lists.
+   . Encodes the class labels in the dataset using the encode_class function.
+   . Converts the data values to float type.
+
+4. Training and Testing:
+   . Sets the ratio for splitting the data into training and testing sets.
+   . Splits the data into training and testing sets using the splitting function.
+
+5. Model Training and Evaluation:
+   . Computes mean and standard deviation for each class attribute in the training data using MeanAndStdDevForClass.
+   . Uses the trained model to make predictions on the test data using getPredictions.
+   . Calculates the accuracy of the model using accuracy_rate.
+
+6. Output:
+   . Prints the total number of examples, training examples, and test examples.
+   . Prints the accuracy of the model.
+
+The code essentially implements a Gaussian Naive Bayes classifier for a classification task, where it assumes that the features are independent and follow a Gaussian distribution 
+within each class. It preprocesses the data, trains the model, and evaluates its performance on unseen test data.
+
+
+
+
+
